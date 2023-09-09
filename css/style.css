@@ -1,0 +1,161 @@
+/* SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62
+/ 74 / 86 / 98 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box--request,
+.box--gratitude {
+  width: 26%;
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 20%, 14%));
+  padding: 3.2rem;
+  border-radius: 2.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.icon-star {
+  width: 4.4rem;
+  height: 4.4rem;
+  padding: 1.4rem;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 100px;
+}
+
+.request-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.request-text,
+.gratitude-text {
+  font-size: 1.5rem;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+  padding: 0;
+}
+
+.btn-box {
+  justify-content: space-between;
+  list-style: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 100px;
+  font-family: "Overpass", sans-serif;
+  cursor: pointer;
+}
+
+.btn-rating {
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  color: hsl(217, 12%, 63%);
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.btn-rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.btn-submit {
+  height: 4.4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.8);
+  background-color: hsl(25, 97%, 53%);
+  justify-self: center;
+  transition: all 0.3s;
+  padding-top: 0.2rem;
+}
+
+.btn-submit:hover {
+  background-color: hsla(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.box--gratitude {
+  padding: 4.4rem 2.8rem;
+  gap: 3rem;
+}
+
+.selected-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsla(25, 97%, 53%, 0.6);
+  padding: 0.8rem 1.8rem;
+  text-align: center;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 100px;
+  margin-bottom: 0.8rem;
+}
+
+.gratitude-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.gratitude-text {
+  letter-spacing: 0.04rem;
+  text-align: center;
+}
+
+.btn.selected {
+  background-color: hsl(216, 12%, 54%);
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+/* const ratingBtn = document.querySelectorAll(".btn");
+
+console.log(ratingBtn);
+
+let currentBtn = 0;
+
+ratingBtn.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    document.querySelector(".selected").classList.remove("selected");
+    btn.classList.add("selected");
+  });
+}); */
